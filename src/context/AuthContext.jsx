@@ -7,7 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const savedUser = localStorage.getItem("creativehub_user");
+    const savedUser = localStorage.getItem("kreaty_user");
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     }
@@ -16,12 +16,12 @@ export const AuthProvider = ({ children }) => {
 
   const login = (userData) => {
     setUser(userData);
-    localStorage.setItem("creativehub_user", JSON.stringify(userData));
+    localStorage.setItem("kreaty_user", JSON.stringify(userData));
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem("creativehub_user");
+    localStorage.removeItem("kreaty_user");
   };
 
   return (

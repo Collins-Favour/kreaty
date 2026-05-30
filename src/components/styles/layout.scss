@@ -1,4 +1,27 @@
-@import "./index.scss";
+@import "../../styles/index.scss";
+
+// Animations
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 // Sidebar
 .sidebar {
@@ -13,6 +36,7 @@
   flex-direction: column;
   padding: $spacing-lg 0;
   overflow-y: auto;
+  animation: slideInLeft 0.3s ease-out;
 
   .sidebar-header {
     padding: 0 $spacing-lg;
@@ -29,8 +53,16 @@
     font-weight: 700;
     color: $text-primary;
 
-    .logo-icon {
-      font-size: 24px;
+    .logo-letter {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, $primary, $secondary);
+      border-radius: $radius-md;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-weight: 700;
     }
 
     .logo-text {
@@ -118,6 +150,7 @@
   align-items: center;
   padding: 0 $spacing-lg;
   z-index: 100;
+  animation: fadeInDown 0.3s ease-out;
 
   .topbar-content {
     display: flex;

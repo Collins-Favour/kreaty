@@ -79,17 +79,17 @@ const Portfolio = () => {
 
           <div className="portfolio-stats">
             <StatsCard
-              icon="🎬"
+              icon="◉"
               label="Total Works"
               value={works.length}
             />
             <StatsCard
-              icon="❤️"
+              icon="♥"
               label="Total Likes"
               value={works.reduce((sum, w) => sum + (w.likes || 0), 0)}
             />
             <StatsCard
-              icon="👁️"
+              icon="◈"
               label="Total Views"
               value={works.reduce((sum, w) => sum + (w.views || 0), 0)}
             />
@@ -100,7 +100,6 @@ const Portfolio = () => {
               className="upload-cta"
               onClick={() => setIsUploadOpen(true)}
             >
-              <span className="upload-icon">+</span>
               <h3>Upload Your Next Work</h3>
               <p>Share your latest creation with the community</p>
             </button>

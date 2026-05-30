@@ -90,26 +90,26 @@ const Dashboard = () => {
 
           <div className="stats-grid">
             <StatsCard
-              icon="💰"
+              icon="$"
               label="Total Earnings"
               value={stats?.earnings || 0}
               unit=" KES"
               trend={{ type: "up", percentage: 12 }}
             />
             <StatsCard
-              icon="🎬"
+              icon="◉"
               label="Works Uploaded"
               value={stats?.worksUploaded || 0}
               trend={{ type: "up", percentage: 5 }}
             />
             <StatsCard
-              icon="👁️"
+              icon="◈"
               label="Profile Views"
               value={stats?.profileViews || 0}
               trend={{ type: "up", percentage: 23 }}
             />
             <StatsCard
-              icon="🤝"
+              icon="⬡"
               label="Collaborations"
               value={stats?.collaborations || 0}
               trend={{ type: "up", percentage: 8 }}

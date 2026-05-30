@@ -1,5 +1,28 @@
 @import "../../styles/index.scss";
 
+// Modal Animations
+@keyframes modalOverlayFadeIn {
+  from {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  to {
+    opacity: 1;
+    backdrop-filter: blur(4px);
+  }
+}
+
+@keyframes modalContentSlideUp {
+  from {
+    transform: translateY(40px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
 // Upload Modal
 .modal-overlay {
   position: fixed;
@@ -12,7 +35,7 @@
   align-items: center;
   justify-content: center;
   z-index: 300;
-  animation: fadeIn 0.2s ease;
+  animation: modalOverlayFadeIn 0.3s ease-out;
 }
 
 @keyframes fadeIn {
@@ -32,7 +55,7 @@
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: $shadow-xl;
-  animation: slideUp 0.3s ease;
+  animation: modalContentSlideUp 0.4s ease-out;
 }
 
 @keyframes slideUp {

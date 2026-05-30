@@ -12,7 +12,7 @@ const Topbar = ({ user }) => {
             placeholder="Search works, creators, events..."
             className="search-input"
           />
-          <span className="search-icon">🔍</span>
+          <span className="search-icon">◈</span>
         </div>
 
         <div className="topbar-actions">

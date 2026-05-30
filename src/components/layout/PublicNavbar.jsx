@@ -23,10 +23,9 @@ const PublicNavbar = () => {
     <nav className="public-navbar">
       <div className="navbar-container">
         <Link to="/discover" className="navbar-brand">
-          <span className="brand-icon">🎨</span>
-          <span className="brand-text">CreativeHub</span>
+          <span className="brand-letter">K</span>
+          <span className="brand-text">kreaty</span>
         </Link>
-
         <div className="navbar-center">
           <Link to="/discover" className="navbar-link">
             Discover

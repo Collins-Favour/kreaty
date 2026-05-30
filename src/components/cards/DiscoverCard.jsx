@@ -36,13 +36,13 @@ const DiscoverCard = ({ card, onClick }) => {
         <div className="card-stats">
           {card.likes !== undefined && (
             <span className="stat">
-              <span className="stat-icon">❤️</span>
+              <span className="stat-icon">♥</span>
               {card.likes}
             </span>
           )}
           {card.views !== undefined && (
             <span className="stat">
-              <span className="stat-icon">👁️</span>
+              <span className="stat-icon">◉</span>
               {card.views}
             </span>
           )}

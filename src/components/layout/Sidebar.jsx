@@ -16,8 +16,8 @@ const Sidebar = () => {
     <aside className="sidebar">
       <div className="sidebar-header">
         <div className="sidebar-logo">
-          <span className="logo-icon">🎨</span>
-          <span className="logo-text">CreativeHub</span>
+          <span className="logo-letter">K</span>
+          <span className="logo-text">kreaty</span>
         </div>
       </div>
 
@@ -65,7 +65,7 @@ const Sidebar = () => {
 
       <div className="sidebar-footer">
         <button className="logout-btn" onClick={handleLogout}>
-          <span className="nav-icon">🚪</span>
+          <span className="nav-icon">←</span>
           <span className="nav-text">Logout</span>
         </button>
       </div>

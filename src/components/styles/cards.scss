@@ -1,5 +1,24 @@
 @import "../../styles/index.scss";
 
+// Card Animations
+@keyframes cardHover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes imageZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
 // Discover Card
 .discover-card {
   background-color: $card-bg;
@@ -11,7 +30,7 @@
   box-shadow: $shadow-sm;
 
   &:hover {
-    transform: translateY(-4px);
+    animation: cardHover 0.3s ease-out forwards;
     box-shadow: $shadow-lg;
     border-color: $primary;
 
@@ -20,7 +39,7 @@
     }
 
     .card-image {
-      transform: scale(1.05);
+      animation: imageZoom 0.4s ease-out forwards;
     }
   }
 
@@ -148,8 +167,10 @@
   padding: $spacing-lg;
   border: 1px solid $border-color;
   transition: $transition-base;
+  animation: cardFadeIn 0.6s ease-out;
 
   &:hover {
+    transform: translateY(-2px);
     border-color: $primary;
     box-shadow: $shadow-md;
   }
