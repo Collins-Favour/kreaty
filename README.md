@@ -1,2 +1,0 @@
-# kreaty
-For artists
